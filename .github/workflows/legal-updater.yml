@@ -2,8 +2,7 @@ name: US Legal News Auto-Updater
 
 on:
   schedule:
-    # Runs at the top of every hour
-    - cron: '0 * * * *'
+  - cron: '30 */3 * * *' # Runs at 12:30, 3:30, 6:30, etc.
   workflow_dispatch:
 
 permissions:
