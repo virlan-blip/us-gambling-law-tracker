@@ -114,7 +114,7 @@ def fetch_and_process():
         except Exception as e:
             print(f"Error processing {item['link']} with Gemini: {e}")
             
-    data = data[:30]
+    data = data[:15]
     
     with open('live_data.json', 'w') as f:
         json.dump(data, f, indent=2)
